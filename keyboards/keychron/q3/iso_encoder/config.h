@@ -25,3 +25,40 @@
 
 /* Enable caps-lock LED */
 #define CAPS_LOCK_LED_INDEX 49
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 8
+
+
+#ifdef COMBO_COUNT
+    #undef COMBO_COUNT
+#endif
+
+#ifdef TAPPING_TERM
+    #undef TAPPING_TERM
+#endif
+
+#ifdef COMBO_HOLD
+    #undef COMBO_HOLD
+#endif
+
+#ifdef COMBO_TERM
+    #undef COMBO_TERM
+#endif
+
+#ifdef AUTO_SHIFT_TIMEOUT
+    #undef AUTO_SHIFT_TIMEOUT
+#endif
+
+#define COMBO_ALLOW_ACTION_KEYS
+#define COMBO_STRICT_TIMER
+#define EXTRA_SHORT_COMBOS
+#define TAPPING_TERM 150
+#define COMBO_HOLD (TAPPING_TERM)
+#define COMBO_TERM (TAPPING_TERM/4) // time to get all combo keys down
+
+// AUTO SHIFT
+#define AUTO_SHIFT_TIMEOUT (TAPPING_TERM)
+#define NO_AUTO_SHIFT_SPECIAL
+#define NO_AUTO_SHIFT_TAB
+#define NO_AUTO_SHIFT_SYMBOLS
+#define NO_AUTO_SHIFT_NUMERIC
