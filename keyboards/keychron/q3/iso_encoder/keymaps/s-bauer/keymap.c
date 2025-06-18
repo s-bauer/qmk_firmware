@@ -154,8 +154,6 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
     // ONLY non-held combos go here. 
     // For held combos, see matrix_scan_user
 
-    uprintf("Combo: start\n");
-
 
     if (pressed) {
         // key down
@@ -164,7 +162,6 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
             case MC_COPY:
             case MC_CUT:
             case MC_PASTE:
-                uprintf("Combo: pressed\n");
                 combo_on = combo_index;
                 break;
         }
@@ -180,17 +177,14 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
 
             switch(combo_index) {
                 case MC_COPY:
-                    uprintf("Combo: MC_COPY released\n");
                     tap_code16(LCTL(KC_C));
                     break;
                 
                 case MC_CUT:
-                    uprintf("Combo: MC_CUT released\n");
                     tap_code16(LCTL(KC_X));
                     break;
 
                 case MC_PASTE:
-                    uprintf("Combo: MC_PASTE released\n");
                     tap_code16(LCTL(KC_V));
                     break;
             }
