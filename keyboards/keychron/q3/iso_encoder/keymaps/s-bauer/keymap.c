@@ -52,15 +52,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,                 KC_F1,              KC_F2,        KC_F3,    KC_F4,    KC_F5,    KC_F6,               KC_F7,     KC_F8,    KC_F9,        KC_F10,         KC_F11,     KC_F12,         KC_MUTE,                   KC_PSCR,  DF(WIN_BASE),  QK_AUTO_SHIFT_TOGGLE,
         LSFT(KC_EQL),           KC_1,               KC_2,         KC_3,     KC_4,     KC_5,     KC_6,                KC_7,      KC_8,     KC_9,         KC_0,           LSFT(KC_0), RALT(KC_MINUS), KC_BSPC,                   KC_INS,   KC_HOME,       KC_PGUP,
         KC_TAB,                 KC_W,               KC_F,         KC_M,     KC_P,     KC_V,     LSFT(KC_7),          KC_DOT,    KC_Q,     LSFT(KC_2),   LSFT(KC_NUHS),  KC_Y,       LSFT(KC_8),                                KC_DEL,   KC_END,        KC_PGDN,
-        TG(HD_NAV),             LCTL_T(KC_R),       LSFT_T(KC_S), KC_N,     KC_T,     KC_G,     KC_COMMA,            KC_A,      KC_E,     LSFT_T(KC_I), LCTL_T(KC_H),   KC_J,       LSFT(KC_9),     KC_ENT,
+        KC_NO,                  LCTL_T(KC_R),       LSFT_T(KC_S), KC_N,     KC_T,     KC_G,     KC_COMMA,            KC_A,      KC_E,     LSFT_T(KC_I), LCTL_T(KC_H),   KC_J,       LSFT(KC_9),     KC_ENT,
         LM(HD_SHIFT, MOD_LSFT), RALT(KC_MINUS),     KC_X,         KC_C,     KC_L,     KC_D,     KC_B,                KC_SLASH,  KC_U,     KC_O,         KC_Z,           KC_K,                       LM(HD_SHIFT, MOD_RSFT),              KC_UP,
         KC_LCTL,                KC_LWIN,            KC_LALT,                                    KC_SPC,                                                 KC_RALT,        KC_RWIN,    MO(HD_FN),      KC_RCTL,                   KC_LEFT,  KC_DOWN,       KC_RGHT),
 
     [HD_SHIFT] = LAYOUT_tkl_f13_iso(
         KC_ESC,                 KC_F1,              KC_F2,        KC_F3,    KC_F4,    KC_F5,    KC_F6,               KC_F7,     KC_F8,    KC_F9,        KC_F10,         KC_F11,     KC_F12,         KC_MUTE,                   KC_PSCR,  KC_NO,         RGB_MOD,
-        CKEY_TILDE,             KC_1,               CKEY_AT,      CKEY_HASH,KC_4,     KC_5,     CKEY_CARET,          KC_6,      KC_NO,    CKEY_LT,      KC_NUBS,        KC_SLASH,   CKEY_PIPE,      KC_BSPC,                   KC_INS,   KC_HOME,       KC_PGUP,
+        CKEY_TILDE,             KC_1,               CKEY_AT,      CKEY_HASH,KC_4,     KC_5,     CKEY_CARET,          KC_6,      KC_MINUS, CKEY_LT,      KC_NUBS,        KC_SLASH,   CKEY_PIPE,      KC_BSPC,                   KC_INS,   KC_HOME,       KC_PGUP,
         KC_TAB,                 KC_W,               KC_F,         KC_M,     KC_P,     KC_V,     KC_RBRC,             KC_DOT,    KC_Q,     CKEY_SQ_O,    CKEY_SQ_C,      KC_Y,       CKEY_CURL_O,                               KC_DEL,   KC_END,        KC_PGDN,
-        TG(HD_NAV),             KC_R,               KC_S,         KC_N,     KC_T,     KC_G,     KC_COMMA,            KC_A,      KC_E,     KC_I,         KC_H,           KC_J,       CKEY_CURL_C,    KC_ENT,
+        KC_NO,                  KC_R,               KC_S,         KC_N,     KC_T,     KC_G,     KC_COMMA,            KC_A,      KC_E,     KC_I,         KC_H,           KC_J,       CKEY_CURL_C,    KC_ENT,
         LM(HD_SHIFT, MOD_LSFT), CKEY_PIPE,          KC_X,         KC_C,     KC_L,     KC_D,     KC_B,                CKEY_PLUS, KC_U,     KC_O,         KC_Z,           KC_K,                       LM(HD_SHIFT, MOD_RSFT),              KC_UP,
         KC_LCTL,                KC_LWIN,            KC_LALT,                                    KC_SPC,                                                 KC_RALT,        KC_RWIN,    MO(HD_FN),      KC_RCTL,                   KC_LEFT,  KC_DOWN,       KC_RGHT),
 
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,                 KC_F1,              KC_F2,        KC_F3,    KC_F4,    KC_F5,    KC_F6,               KC_F7,     KC_F8,    KC_F9,        KC_F10,         KC_F11,     KC_F12,         KC_MUTE,                   KC_PSCR,  KC_NO,         RGB_MOD,
         LSFT(KC_EQL),           KC_NO,              KC_NO,        KC_NO,    KC_NO,    KC_NO,    KC_NO,               KC_NO,     KC_NO,    KC_NO,        KC_NO,          KC_NO,      KC_NO,          KC_BSPC,                   KC_INS,   KC_HOME,       KC_PGUP,
         KC_TAB,                 KC_NO,              KC_NO,        KC_NO,    KC_NO,    KC_NO,    KC_NO,               KC_BSPC,   KC_DEL,   KC_HOME,      KC_END,         KC_NO,      KC_NO,                                     KC_DEL,   KC_END,        KC_PGDN,
-        TG(HD_NAV),             KC_LCTL,            KC_LSFT,      KC_LALT,  KC_NO,    KC_G,     KC_NO,               KC_LEFT,   KC_DOWN,  KC_UP,        KC_RIGHT,       KC_NO,      KC_NO,          KC_ENT,
+        KC_NO,                  KC_LCTL,            KC_LSFT,      KC_LALT,  KC_NO,    KC_G,     KC_NO,               KC_LEFT,   KC_DOWN,  KC_UP,        KC_RIGHT,       KC_NO,      KC_NO,          KC_ENT,
         KC_LSFT,                KC_NO,              KC_NO,        KC_NO,    KC_NO,    KC_NO,    KC_NO,               KC_NO,     KC_NO,    KC_NO,        KC_NO,          KC_NO,                      KC_RSFT,                             KC_UP,
         KC_LCTL,                KC_LWIN,            KC_LALT,                                    KC_SPC,                                                 KC_RALT,        KC_RWIN,    MO(HD_FN),      KC_RCTL,                   KC_LEFT,  KC_DOWN,       KC_RGHT),
 
@@ -227,6 +227,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_PIPE:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_NUBS));
             set_mods(mod_state);
         } else {
@@ -237,6 +238,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_PLUS:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(KC_RBRC);
             set_mods(mod_state);
         } else {
@@ -247,6 +249,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_CURL_C:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_0));
             set_mods(mod_state);
         } else {
@@ -257,6 +260,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_CURL_O:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_7));
             set_mods(mod_state);
         } else {
@@ -267,6 +271,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_SQ_O:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_8));
             set_mods(mod_state);
         } else {
@@ -277,6 +282,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_SQ_C:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_9));
             set_mods(mod_state);
         } else {
@@ -287,6 +293,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_TILDE:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_RBRC));
             set_mods(mod_state);
         } else {
@@ -297,6 +304,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_AT:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(RALT(KC_Q));
             set_mods(mod_state);
         } else {
@@ -327,6 +335,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     case CKEY_LT:
         if(record->event.pressed) {
             del_mods(MOD_MASK_SHIFT);
+            wait_ms(1);
             register_code16(KC_NUBS);
             set_mods(mod_state);
         } else {
