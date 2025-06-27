@@ -55,6 +55,7 @@
 #define TAPPING_TERM 150
 #define COMBO_HOLD (TAPPING_TERM)
 #define COMBO_TERM (TAPPING_TERM/4) // time to get all combo keys down
+#define TAP_CODE_DELAY 10
 
 // AUTO SHIFT
 #define AUTO_SHIFT_TIMEOUT (TAPPING_TERM)
